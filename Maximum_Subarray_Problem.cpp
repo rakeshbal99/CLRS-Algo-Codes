@@ -58,12 +58,12 @@ msa FIND_MAXIMUM_SUBARRAY(int A[],int low,int high){
 int main(){
 	msa a;
 	int A[100],n;
-	cout<<"Enter the no.  of numbers in the array :n";	
+	cout<<"Enter the no.  of numbers in the array n::";	
 	cin>>n;
 	cout<<"Enter the numbers\n";
-	for(int i=0;i<n;i++)
+	for(int i=1;i<=n;i++)
 		cin>>A[i];
-	a=FIND_MAXIMUM_SUBARRAY(A,0,n);
+	a=FIND_MAXIMUM_SUBARRAY(A,1,n);
 	cout<<a.low<<endl<<a.high<<endl<<a.sum<<endl;	
 	return 0;
 }
